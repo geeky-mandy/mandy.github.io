@@ -1,0 +1,22 @@
+canvas {
+	width: 100%;
+	height: 80%;
+	
+}
+
+body, html {
+ height: 110%;
+ margin: 0;
+ background: url("https://images.unsplash.com/photo-1571397133301-3f838ea96f56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.container {
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'Special Elite', cursive;
+	color: rgba(255,255,255,0.7);
+	text-shadow: 3px 3px 10px rgba(64,8,45,0.5);
+}
