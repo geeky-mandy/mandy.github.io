@@ -2,12 +2,16 @@ body {
 	background-color: #232323;
 }
 
+h1 {
+	color: white;
+}
+
 .square {
-	width: 30%;
 	background: purple;
+	margin: 1.66%;
+	width: 30%;
 	padding-bottom: 30%;
 	float: left;
-	margin: 1.66%;
 }
 
 #container {
@@ -15,6 +19,6 @@ body {
 	max-width: 600px;
 }
 
-h1 {
+span {
 	color: white;
 }
