@@ -1,10 +1,29 @@
 var colors = generateRandomColor(6);
-
+var resetButton = document.querySelector("#reset")
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickRandomColor();
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
+
+resetButton.addEventListener("click", function()
+{
+	//want to generate random rgb color
+	colors = generateRandomColor(6);
+	//pick a random color from 6 rgb color
+	pickedColor = pickRandomColor();
+	//change colorDisplay (change the rgb code on span)
+	colorDisplay.textContent = pickedColor;
+	//change color of squares on the page
+	for(var i=0; i<squares.length; i++)
+	{
+		squares[i].style.background = colors[i];
+	}
+	//make the background of h1 black
+	h1.style.background = "#232323";
+	//change the button content to new colors once play again is clicked
+	resetButton.textContent = "NEW COLORS";
+});
 
 colorDisplay.textContent = pickedColor;
 
@@ -24,6 +43,7 @@ for(var i=0; i<squares.length; i++)
 				messageDisplay.textContent = "Correct";
 				sameColor(clickedColor);
 				h1.style.background = pickedColor;
+				resetButton.textContent = "PLAY AGAIN?"
 			}
 		else
 			{
