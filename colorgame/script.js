@@ -1,15 +1,46 @@
-var colors = generateRandomColor(6);
+var numOfSquares = 6;
+var colors = generateRandomColor(numOfSquares);
 var resetButton = document.querySelector("#reset")
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickRandomColor();
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
+var easyButton = document.querySelector("#easyButton");
+var hardButton = document.querySelector("#hardButton");
 
+easyButton.addEventListener("click", function()
+{
+	easyButton.classList.add("selected");
+	hardButton.classList.remove("selected");
+	numOfSquares = 3;
+	colors = generateRandomColor(numOfSquares);
+	pickedColor = pickRandomColor();
+	colorDisplay.textContent = pickedColor;
+	for(var i=0;i<colors.length;i++)
+	{
+		squares[i].style.background = colors[i];
+		squares[i+3].style.display = "none";
+	}
+});
+hardButton.addEventListener("click", function()
+{
+	hardButton.classList.add("selected");
+	easyButton.classList.remove("selected");
+	numOfSquares = 6;
+	colors = generateRandomColor(numOfSquares);
+	pickedColor = pickRandomColor();
+	colorDisplay.textContent = pickedColor;
+	for(var i=0;i<colors.length;i++)
+	{
+		squares[i].style.background = colors[i];
+		squares[i+3].style.display = "block";
+	}
+});
 resetButton.addEventListener("click", function()
 {
 	//want to generate random rgb color
-	colors = generateRandomColor(6);
+	colors = generateRandomColor(numOfSquares);
 	//pick a random color from 6 rgb color
 	pickedColor = pickRandomColor();
 	//change colorDisplay (change the rgb code on span)

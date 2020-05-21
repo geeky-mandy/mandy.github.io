@@ -1,11 +1,9 @@
 body {
 	background-color: #232323;
 }
-
 h1 {
 	color: white;
 }
-
 .square {
 	background: purple;
 	margin: 1.66%;
@@ -13,17 +11,16 @@ h1 {
 	padding-bottom: 30%;
 	float: left;
 }
-
 #container {
 	margin: 0px auto;
 	max-width: 600px;
 }
-
-
-
 #bar{
 	background-color: white;
 	text-align: center;
 	height: 30px;
 	color: black;
+}
+.selected{
+	background-color: blue;
 }
