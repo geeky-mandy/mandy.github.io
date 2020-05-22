@@ -51,9 +51,10 @@ resetButton.addEventListener("click", function()
 		squares[i].style.background = colors[i];
 	}
 	//make the background of h1 black
-	h1.style.background = "#232323";
+	h1.style.background = "steel blue";
 	//change the button content to new colors once play again is clicked
 	resetButton.textContent = "NEW COLORS";
+	messageDisplay.textContent = "";
 });
 
 colorDisplay.textContent = pickedColor;
