@@ -26,6 +26,7 @@
 	/*border: 1px solid red;*/
 	margin: 0;
 	border: none;
+	box-shadow: 3px 4px 20px rgba(0, 0 , 0, 0.05);
 }
 .navbar-default .navbar-brand {
 	font-weight: 800;
@@ -99,4 +100,66 @@
 }
 .navbar-default .navbar-nav>li>a{
 	color: black;
+}
+
+
+/*Login Page Styling*/
+
+#leftLogin {
+	height: 650px;
+	width: 570px;
+	background: #384aeb;
+	margin-left: 200px;
+	margin-top: 95px;
+}
+#rightLogin{
+	height: 650px;
+	width: 570px;
+	background: #f1f6f7;
+	margin-left: 770px;
+	margin-top: -670px;
+}
+.createAccount{
+	padding-top: 45%;
+}
+.createAccount .btn-primary{
+	margin-top: 40px;
+	border: 0.5px solid white;
+}
+.createAccount h2, p{
+	color: white;
+}
+.createAccount .btn-primary:hover{
+	background: #c5322d;
+	color: white;
+	border: none;
+}
+#loginForm{
+	padding-left: 150px;
+	padding-top: 5%;
+}
+#logIn{
+}
+#inputEmail3{
+	background: #f1f6f7;
+	border-radius: 10px;
+	border: 0.5px solid #384aeb;
+}
+#inputPassword3{
+	background: #f1f6f7;
+	border-radius: 10px;
+	border:  0.5px solid #384aeb;
+}
+#log {
+	/*margin-top: 50px;*/
+	padding-top: 230px;
+}
+.btn-danger{
+	background-color: rgba(0,0,0, 0.8) ;
+	border-radius: 20px;
+	border: none;
+}
+.loginSubmit .btn-primary:hover{
+	background: #c5322d;
+	color: white;
 }
