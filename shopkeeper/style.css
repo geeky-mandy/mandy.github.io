@@ -1,3 +1,4 @@
+/*Home Page */
 #square1 {
 	height: 800px;
 	width: 35%;
@@ -72,14 +73,12 @@
 	background-color: #384aeb;
 	border-radius: 20px;
 	border: none;
+
 }
 .slider-one{
 	/*height: 100px;*/
 }
-.footer{
-	background: #002347;
-	height: 600px;
-}
+
 .autoplay{
 	padding-left: 150px;
 	padding-top: 30px;
@@ -94,6 +93,7 @@
 	color: black;
 	background: #f1f6f7;
 	/*border: 1px solid #384aeb;*/
+	font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #384aeb;
@@ -101,9 +101,54 @@
 .navbar-default .navbar-nav>li>a{
 	color: black;
 }
-
+.slid1 {
+	margin-bottom: 30px;
+}
+#img1{
+	height: 500px;
+	width: 765px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#img2{
+	height: 500px;
+	width: 885px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#img3{
+	height: 500px;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slick-track{
+	height: 500px;
+}
+.brandLogo {
+	height: 150px;
+	width: 150px;
+}
+.cherishedBrand{
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+.slider2{
+	margin-bottom: -220px;
+}
+.tImg{
+	transition: transform 0.6s;
+}
+.tImg:hover{
+	transform: scale(1.2);
+}
+/*Homme Page*/
 
 /*Login Page Styling*/
+.twoBox{
+	margin-bottom: 30px;
+
+}
 
 #leftLogin {
 	height: 650px;
@@ -111,6 +156,8 @@
 	background: #384aeb;
 	margin-left: 200px;
 	margin-top: 95px;
+	
+	
 }
 #rightLogin{
 	height: 650px;
@@ -118,6 +165,7 @@
 	background: #f1f6f7;
 	margin-left: 770px;
 	margin-top: -670px;
+	
 }
 .createAccount{
 	padding-top: 45%;
@@ -127,7 +175,7 @@
 	border: 0.5px solid white;
 }
 .createAccount h2, p{
-	color: white;
+	color: rgba(0,0,0,0.8);
 }
 .createAccount .btn-primary:hover{
 	background: #c5322d;
@@ -162,4 +210,54 @@
 .loginSubmit .btn-primary:hover{
 	background: #c5322d;
 	color: white;
+}
+
+/*Footer Styling*/
+.footer{
+	background: #002347;
+	height: 500px;
+}
+.footNote{
+	padding-top: 20px;
+}
+#lowerFoot{
+	background: #05274b;
+	height: 80px;
+}
+/*Footer Styling*/
+
+/*Product Page*/
+#phoneImage{
+	height: 600px;
+	transition: transform 1s;
+}
+#phoneImage:hover{
+	transform: scale(1.2);
+}
+.phoneBox{
+	margin-top: 50px;
+	border: none;
+}
+.phoneDetails{
+	margin-top: 80px;
+}
+.numberBorder{
+	border: 0.5px solid #384aeb;
+	border-radius: 20px;
+	width: 40px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.finalBuy{
+	margin-left: 50px;
+	/*margin-top: 20px;*/
+}
+.finalBuy:hover{
+	border: 1px solid #384aeb;
+	background: white;
+	font-weight: bold;
+}
+#techData{
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
