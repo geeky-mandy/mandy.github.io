@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select an address</title>
+	<!-- Bootstrap 3 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/62e7ddabc7.js" crossorigin="anonymous"></script>
+
+	<!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fas fa-mobile"></i> The ShopKeeper</a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+
+  <main>
+    <div class="container selectAddress">
+      <h2>Select a delivery address</h2>
+      <hr>
+      <div class="row addressRow">
+        <div class="col-sm-3">
+          <div class="deliveryData">
+            <h3><strong>Mr.Toot</strong></h3>
+            <h4>4/5 ABC Road</h4>
+            <h4>Durgapur</h4>
+            <h4>West Bengal 712304</h4>
+            <h4>India</h4>
+            <a href="#" class="addDelInstruction">Add delivery instructions</a> 
+          </div>
+          <div>
+            <p><a href="paymentportal.html" class="btn btn-primary btn-md deliverButton" role="button">Deliver to this address</a></p>
+            <a href="#" class="btn btn-primary btn-sm editButton" role="button">Edit</a>
+            <a href="#" class="btn btn-primary btn-sm deleteButton" role="button">Delete</a> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="deliveryData">
+            <h3><strong>Mr.Toot</strong></h3>
+            <h4>4/5 ABC Road</h4>
+            <h4>Durgapur</h4>
+            <h4>West Bengal 712304</h4>
+            <h4>India</h4>
+            <a href="#" class="addDelInstruction">Add delivery instructions</a> 
+          </div>
+          <div>
+            <p><a href="paymentportal.html" class="btn btn-primary btn-md deliverButton" role="button">Deliver to this address</a></p>
+            <a href="#" class="btn btn-primary btn-sm editButton" role="button">Edit</a>
+            <a href="#" class="btn btn-primary btn-sm deleteButton" role="button">Delete</a> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="deliveryData">
+            <h3><strong>Mr.Toot</strong></h3>
+            <h4>4/5 ABC Road</h4>
+            <h4>Durgapur</h4>
+            <h4>West Bengal 712304</h4>
+            <h4>India</h4>
+            <a href="#" class="addDelInstruction">Add delivery instructions</a> 
+          </div>
+          <div>
+            <p><a href="paymentportal.html" class="btn btn-primary btn-md deliverButton" role="button">Deliver to this address</a></p>
+            <a href="#" class="btn btn-primary btn-sm editButton" role="button">Edit</a>
+            <a href="#" class="btn btn-primary btn-sm deleteButton" role="button">Delete</a> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="deliveryData">
+            <h3><strong>Mr.Toot</strong></h3>
+            <h4>4/5 ABC Road</h4>
+            <h4>Durgapur</h4>
+            <h4>West Bengal 712304</h4>
+            <h4>India</h4>
+            <a href="#" class="addDelInstruction">Add delivery instructions</a> 
+          </div>
+          <div>
+            <p><a href="paymentportal.html" class="btn btn-primary btn-md deliverButton" role="button">Deliver to this address</a></p>
+            <a href="#" class="btn btn-primary btn-sm editButton" role="button">Edit</a>
+            <a href="#" class="btn btn-primary btn-sm deleteButton" role="button">Delete</a> 
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <h2>Add a new address</h2>
+      <div class="row newAddress">
+        <div class="col-sm-6">
+              <div class="addressForm">
+                <p><input class="inputType"  type="text" name="fullname" placeholder="  Full Name"></p>
+                <p><input class="inputType"  type="text" name="mobilenumber" placeholder="  Mobile Number"></p>
+                <p><input class="inputType"  type="text" name="pincode" placeholder="  Pincode"></p>
+                <p><input class="inputType"  type="text" name="houseno" placeholder="  Flat, House no., Building, Company, Apartment"></p>
+              </div>
+        </div>
+        <div class="col-sm-6">
+              <div class="addressForm">
+                <p><input class="inputType"  type="text" name="area" placeholder="  Area, Colony, Street, Sector, Village"></p>
+                <p><input class="inputType"  type="text" name="landmark" placeholder="  Landmark e.g. near apollo hospital"></p>
+                <p><input class="inputType"  type="text" name="city" placeholder="  Town/City"></p>
+                <p><input class="inputType"  type="text" name="state" placeholder="  State"></p>
+              </div>
+        </div>
+      </div>
+      <p><a href="paymentportal.html" class="btn btn-primary btn-md deliverButtonAddNew" role="button">Deliver to this address</a></p>
+    </div>
+  </main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
