@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.turnjs.com/lib/turn.min.js"></script>
+
+<style type="text/css">
+body{
+	background:white; 
+        font-family:Arial;
+        background-image:url("https://cdn.pixabay.com/photo/2011/12/13/14/15/orion-nebula-11001_1280.jpg");
+  	background-color: black;
+  	background-repeat: no-repeat;
+  	background-size:cover;
+        color:white;
+}
+#magazine{
+	width:500px;
+	height:700px;
+        
+}
+#magazine .turn-page{
+	background-color:white;
+        background-size:100%;
+	
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+  color: white;
+}
+#n {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="magazine">
+        
+        <div style="background-color:black;"><center><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><h1><hr >&nbsp;&nbsp; LET'S &nbsp;FATHOM &nbsp;INTO &nbsp;MY  &nbsp; &nbsp;&nbsp;  CONSTELLATIONS <hr><br></h1><h1 id="n"> RIYA &nbsp;JOSHI<br><img style="width:250px;height:250px;"src="https://cdn.pixabay.com/photo/2017/03/22/10/52/fairy-2164589_960_720.png"></h1></center></div>
+         <div style="background-color:black;color:white;"><center><br><br><h2>Welcome &nbsp;to&nbsp; MY&nbsp; SPACE <hr></h2> <br><br><br><h3>Its me Riya :)<br><br>This place is basically going to be a replica of my mind's database since the Kindom of Thoughts are experiencing many cloud bursts.<br><br> Well , I'm sleepy rn ...will update you later...</h3></div>
+        <div style="background-color:black;color:white;"><h2>WHAT THE FUCK ?????????????? </h2><br><br><h3>Had planned to get started here today but I'M 19 NOW.........and I'm freaking out......I don't want to grow old.....I'm still 13 Y.O by heart..........byeee for noww I'm going out tonight.....</h3></div>
+        <div style="background-color:black;color:white;"><br<<br><br><br><h3> xD its DAY 20 OF LOCKDOWN but  i'm running low on motivation so laterssss.......<br><br>Well soon all the Kingdoms (Thoughts , Love , Poem , Photography , Music , Friends ) are going to move hereeee..and I'm going to make this PRIVATEE ... coz I know bitches be stalking me everywhere</div>
+  	<div style="background-color:black;"><center><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br<br><br><br><br><br><h1>THANKYOU &nbsp; &nbsp; :)</h1></center></div>
+</div>
+</center>
+
+<script type="text/javascript">
+
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'single',
+							acceleration: true,
+							gradients: !$.isTouch,
+                                                        autoCenter: true,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script>
+
+</body>
+</html>
