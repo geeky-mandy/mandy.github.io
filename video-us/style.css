@@ -1,0 +1,45 @@
+body{
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+}
+.navbar-light{
+    background-color: white;
+    
+}
+.page-1{
+    background-image: url("img/virus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.page-2{
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar-scroll{
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.col-sm-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+}
+video{
+    border: none;
+    outline: none;
+}
+video:focus{
+    border: none;
+    outline: none;
+}
+.page-3{
+    overflow-x: hidden;
+}
+.insert > video{
+    margin-top: 100px;
+    margin-left: 100px;
+}
