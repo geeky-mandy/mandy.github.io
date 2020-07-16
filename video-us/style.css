@@ -21,7 +21,7 @@ body{
     background-color: white;
     transition: all 0.3s ease;
 }
-.col-sm-6{
+.col-md-6{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,4 +42,8 @@ video:focus{
 .insert > video{
     margin-top: 100px;
     margin-left: 100px;
+}
+.girl{
+    max-height: 700px;
+    max-width: 500px;
 }
